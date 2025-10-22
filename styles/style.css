@@ -189,6 +189,8 @@ body {
 
 @media screen and (min-width: 775px) {
   .testimonials {
+    margin: calc(var(--space-400) * 3)
+      clamp(var(--space-300), var(--space-500), var(--space-500));
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }

@@ -50,9 +50,13 @@
   --space-300: 1.5rem;
   --space-400: 2rem;
   --space-500: 2.5rem;
+
+  /* Box Shadow */
+  --shadow-card: 2.5rem 3.75rem 3.125rem -2.9375rem hsla(217, 19%, 35%, 24.74%);
 }
 
 body {
+  background-color: var(--color-white);
   font-family: var(--font-barlow);
 }
 

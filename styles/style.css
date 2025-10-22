@@ -21,6 +21,12 @@
 :root {
   /* Fonts */
   --font-barlow: "Barlow Semi Condensed", sans-serif;
+
+  /* Typography */
+  --text-preset-1: 600 1.25rem / 120% var(--font-barlow);
+  --text-preset-2: 500 0.8125rem / 110% var(--font-barlow);
+  --text-preset-3: 500 0.8125rem / 140% var(--font-barlow);
+  --text-preset-4: 500 0.6875rem / 110% var(--font-barlow);
 }
 
 body {

@@ -42,6 +42,7 @@
   --color-grey-500: hsl(217, 19%, 35%);
   --color-dark-blue: hsl(219, 29%, 14%);
   --color-black: hsl(0, 0%, 7%);
+  --color-bckg: hsl(300, 5%, 96%);
 
   /* Spacing */
   --space-50: 0.25rem;
@@ -55,9 +56,112 @@
   --shadow-card: 2.5rem 3.75rem 3.125rem -2.9375rem hsla(217, 19%, 35%, 24.74%);
 }
 
+/* General */
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-bckg);
   font-family: var(--font-barlow);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2rem;
+  place-items: center;
+}
+
+/* Testimonial */
+.testimonials {
+  min-width: 19.0625rem;
+  max-width: 69.625rem;
+  margin: clamp(var(--space-300), var(--space-400), var(--space-500));
+  display: grid;
+  gap: var(--space-400);
+}
+
+.testimonial {
+  padding: var(--space-400);
+  border-radius: var(--space-100);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-200);
+}
+
+.testimonial__author-image {
+  border-radius: 50%;
+  width: 28px;
+}
+
+.testimonial__author-name {
+  font: var(--text-preset-2);
+  margin-bottom: var(--space-50);
+}
+
+.testimonial__author-verification {
+  font: var(--text-preset-4);
+}
+
+.testimonial__header {
+  font: var(--text-preset-1);
+}
+
+.testimonial__test {
+  font: var(--text-preset-3);
+}
+
+/* Individual Styling */
+/* Backgrounds */
+.testimonial__purple {
+  background-color: var(--color-purple-500);
+}
+
+.testimonial__grey {
+  background-color: var(--color-grey-500);
+}
+
+.testimonial__white {
+  background-color: var(--color-white);
+}
+
+.testimonial__darkblue {
+  background-color: var(--color-dark-blue);
+}
+
+/* Image Border */
+.testimonial__purple--border {
+  border: 2px solid var(--color-purple-300);
+}
+
+.testimonial__darkblue--border {
+  border: 2px solid var(--color-purple-500);
+}
+
+/* Color */
+.testimonial__color--white {
+  color: var(--color-white);
+}
+
+.testimonial__color--purple {
+  color: var(--color-purple-50);
+}
+
+.testimonial__color--lightgrey {
+  color: var(--color-grey-100);
+}
+
+.testimonial__color--grey {
+  color: var(--color-grey-200);
+}
+
+.testimonial__color--darkgrey {
+  color: var(--color-grey-400);
+}
+
+.testimonial__color--darkergrey {
+  color: var(--color-grey-500);
 }
 
 /* Footer Attribution */

@@ -1,3 +1,32 @@
+/* Fonts Import */
+/* barlow-semi-condensed-500 */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-semi-condensed-v16-latin-500.woff2") format("woff2");
+}
+
+/* barlow-semi-condensed-600 */
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-semi-condensed-v16-latin-600.woff2") format("woff2");
+}
+
+/* Custom Properties */
+:root {
+  /* Fonts */
+  --font-barlow: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  font-family: var(--font-barlow);
+}
+
 /* Footer Attribution */
 .attribution {
   font-size: 0.75rem;
